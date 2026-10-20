@@ -1,0 +1,786 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanhar Solar Energy | Official Knox Solar Distributor</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0b132b',
+                            deepBlue: '#1c2541',
+                            accentBlue: '#0066cc',
+                            gold: '#f59e0b',
+                            brightGold: '#fbbf24',
+                            amber: '#d97706',
+                            emerald: '#10b981',
+                            cardBg: '#131e32',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fce055 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(11, 19, 43, 0.88);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+        }
+        .img-zoom {
+            transition: transform 0.5s ease;
+        }
+        .group:hover .img-zoom {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Branding -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <!-- High Resolution SVG Replica of Official WANHAR SOLAR ENERGY Logo Image -->
+                    <div class="h-14 py-1 flex items-center justify-center">
+                        <svg viewBox="0 0 450 160" class="h-full w-auto drop-shadow-xl overflow-visible">
+                            <defs>
+                                <linearGradient id="navPanelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#2563eb"/>
+                                    <stop offset="50%" stop-color="#1d4ed8"/>
+                                    <stop offset="100%" stop-color="#0f172a"/>
+                                </linearGradient>
+                                <linearGradient id="navGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#ffe066"/>
+                                    <stop offset="40%" stop-color="#f59e0b"/>
+                                    <stop offset="100%" stop-color="#b45309"/>
+                                </linearGradient>
+                                <filter id="glowStar" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                                </filter>
+                            </defs>
+                            
+                            <!-- Left Blue Solar Grid Wing -->
+                            <g transform="translate(10, 0)">
+                                <!-- Upper Panel Layer -->
+                                <path d="M 30,55 L 75,25 L 115,25 L 70,55 Z" fill="url(#navPanelGrad)" stroke="#60a5fa" stroke-width="1.5"/>
+                                <path d="M 73,55 L 118,25 L 155,25 L 110,55 Z" fill="url(#navPanelGrad)" stroke="#60a5fa" stroke-width="1.5"/>
+                                <path d="M 113,55 L 158,25 L 185,25 L 140,55 Z" fill="url(#navPanelGrad)" stroke="#60a5fa" stroke-width="1.5"/>
+                                <!-- Lower Panel Layer -->
+                                <path d="M 20,82 L 65,58 L 105,58 L 60,82 Z" fill="url(#navPanelGrad)" stroke="#60a5fa" stroke-width="1.5"/>
+                                <path d="M 63,82 L 108,58 L 145,58 L 100,82 Z" fill="url(#navPanelGrad)" stroke="#60a5fa" stroke-width="1.5"/>
+                                <path d="M 103,82 L 148,58 L 175,58 L 130,82 Z" fill="url(#navPanelGrad)" stroke="#60a5fa" stroke-width="1.5"/>
+                            </g>
+
+                            <!-- Stylized Golden WSE + Bird Emblem Curve -->
+                            <g>
+                                <!-- First Stroke of W -->
+                                <path d="M 115,85 L 140,32 C 145,25 155,25 160,35 L 178,75 L 195,35 C 200,25 210,25 215,32 L 235,70 C 240,50 255,30 280,18 C 260,32 250,50 245,72 C 240,92 225,100 205,92 C 188,85 180,60 175,52 L 160,85 Z" fill="url(#navGoldGrad)"/>
+                                <!-- Golden Soaring Bird Wing Crescent (E / W Extension) -->
+                                <path d="M 220,52 C 235,32 255,15 285,10 C 265,22 250,38 245,58 C 265,42 285,32 300,28 C 280,48 262,68 248,88 C 238,102 220,102 205,92 Z" fill="url(#navGoldGrad)"/>
+                            </g>
+
+                            <!-- Bright Orange Glowing Sun Star Center -->
+                            <g filter="url(#glowStar)">
+                                <circle cx="160" cy="22" r="7" fill="#ffffff"/>
+                                <circle cx="160" cy="22" r="14" fill="#f97316" opacity="0.6"/>
+                                <!-- 8-Point Flare Rays -->
+                                <polygon points="160,2 163,18 178,22 163,26 160,42 157,26 142,22 157,18" fill="#fbbf24"/>
+                            </g>
+
+                            <!-- Official White Typography: WANHAR SOLAR ENERGY -->
+                            <text x="210" y="128" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="3">WANHAR</text>
+                            <text x="210" y="152" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#f8fafc" letter-spacing="6">SOLAR ENERGY</text>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Knox Partner Badge (Desktop) -->
+                <div class="hidden md:flex items-center space-x-2.5 bg-slate-900/90 px-3.5 py-1.5 rounded-full border border-amber-500/30">
+                    <span class="text-xs font-medium text-slate-300">Official</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 uppercase tracking-wider">KNOX</span>
+                    <span class="text-xs font-medium text-slate-300">Distributor</span>
+                </div>
+
+                <!-- Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+                    <a href="#about" class="text-slate-300 hover:text-amber-400 transition-colors">About Us</a>
+                    <a href="#inventory" class="text-slate-300 hover:text-amber-400 transition-colors">Knox Inventory</a>
+                    <a href="#features" class="text-slate-300 hover:text-amber-400 transition-colors">Why Knox?</a>
+                    <a href="#contact" class="text-slate-300 hover:text-amber-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Quick Action Button -->
+                <div class="flex items-center">
+                    <a href="https://wa.me/923397078611?text=Hello%20Wanhar%20Solar%20Energy,%20I%20want%20to%20inquire%20about%20Knox%20Solar%20Products." target="_blank" 
+                       class="inline-flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-xl hover:from-emerald-300 hover:to-emerald-400 shadow-lg shadow-emerald-950/40 transition-all hover:scale-105 active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i>
+                        <span>WhatsApp Quote</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="about" class="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-b from-slate-950 via-brand-navy to-slate-950">
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293712_1px,transparent_1px),linear-gradient(to_bottom,#1f293712_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 bg-slate-900/90 border border-amber-500/40 rounded-full px-4 py-2 text-xs sm:text-sm text-amber-300 font-medium">
+                            <i class="fa-solid fa-circle-check text-amber-400"></i>
+                            <span>Authorized Knox Solar Products Distributor in Pakistan</span>
+                        </div>
+                        
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                            Powering Pakistan with <span class="gold-gradient-text">WANHAR SOLAR</span> & <span class="text-amber-400">KNOX</span>
+                        </h1>
+                        
+                        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Official supplier of high-efficiency **Knox Hybrid Inverters** and **Lithium Storage Batteries (LiFePO4)**. Get original factory products with official warranty directly from our Chakwal distribution hub.
+                        </p>
+
+                        <!-- Representative Summary Cards -->
+                        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-sm">
+                            <div class="flex items-center space-x-3 bg-slate-900/90 border border-slate-800 rounded-2xl p-3 px-4 w-full sm:w-auto">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 font-bold">
+                                    <i class="fa-solid fa-user-gear text-lg"></i>
+                                </div>
+                                <div class="text-left">
+                                    <div class="text-[11px] text-slate-400 font-medium">Sales Lead</div>
+                                    <div class="font-bold text-white">Muhammad Hamza</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-3 bg-slate-900/90 border border-slate-800 rounded-2xl p-3 px-4 w-full sm:w-auto">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold">
+                                    <i class="fa-solid fa-map-pin text-lg"></i>
+                                </div>
+                                <div class="text-left">
+                                    <div class="text-[11px] text-slate-400 font-medium">Location</div>
+                                    <div class="font-bold text-white">Chakwal, Punjab</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="#inventory" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-extrabold rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all text-center">
+                                View Knox Stock Catalog <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="tel:03397078611" class="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl border border-slate-700 hover:border-amber-500/50 transition-all text-center">
+                                <i class="fa-solid fa-phone text-amber-400 mr-2"></i> Call 0339-7078611
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Digital Business Card Showcase -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="w-full max-w-md bg-slate-900 border-2 border-amber-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                            <!-- Official Logo Display inside Card -->
+                            <div class="bg-slate-950/90 border border-amber-500/30 rounded-2xl p-4 mb-6 text-center shadow-inner">
+                                <svg viewBox="0 0 420 155" class="w-full h-auto mx-auto max-h-24">
+                                    <use href="#officialWanharLogo"/>
+                                </svg>
+                            </div>
+
+                            <div class="flex justify-between items-center mb-4 pb-3 border-b border-slate-800">
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Authorized Lead Representative</p>
+                                    <p class="text-xl font-black text-white">Muhammad Hamza</p>
+                                </div>
+                                <div class="bg-black/60 border border-amber-500/40 rounded-lg px-2.5 py-1 text-right">
+                                    <div class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Official Partner</div>
+                                    <div class="text-xs font-black text-amber-400">KNOX SOLAR</div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 text-xs text-slate-300 my-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-phone text-amber-400 w-4 text-sm"></i>
+                                    <div class="font-bold text-white">0339-7078611 / 0312-5794230</div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-envelope text-amber-400 w-4 text-sm"></i>
+                                    <div class="font-semibold text-slate-200">wanharsolarenergy@gmail.com</div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-location-dot text-amber-400 w-4 text-sm mt-0.5"></i>
+                                    <div class="font-medium text-slate-300 leading-snug">
+                                        Attock Petrol Pump (Wanhar Petroleum), Miani Adda, Wanhar Valley, Buchal Kalan, Kallar Kahar, Chakwal.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                                <span class="text-[11px] text-emerald-400 font-semibold"><i class="fa-solid fa-shield-halved mr-1"></i> Factory Warranty</span>
+                                <a href="https://wa.me/923397078611" target="_blank" class="text-xs bg-emerald-600/30 text-emerald-400 border border-emerald-500/40 px-3 py-1.5 rounded-lg hover:bg-emerald-600 hover:text-white transition-colors">
+                                    <i class="fa-brands fa-whatsapp mr-1"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Inventory Catalog Section -->
+        <section id="inventory" class="py-20 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-amber-400 mb-2">Available In Stock</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">Knox Inverters & Lithium Batteries</p>
+                    <p class="mt-3 text-slate-400 text-sm sm:text-base">
+                        Select any Knox Hybrid Inverter or LiFePO4 battery model to inspect detailed specifications and request direct pricing over WhatsApp.
+                    </p>
+
+                    <!-- Search & Filter Bar -->
+                    <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 bg-slate-900 p-3 rounded-2xl border border-slate-800">
+                        <!-- Search Box -->
+                        <div class="relative w-full md:w-80">
+                            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-500 text-sm"></i>
+                            <input type="text" id="searchInput" onkeyup="filterAndSearch()" placeholder="Search Knox models (e.g. 6kW, Xenon)..." 
+                                   class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-10 pr-4 py-2 text-xs text-white focus:outline-none focus:border-amber-500">
+                        </div>
+
+                        <!-- Category Filter Tabs -->
+                        <div class="flex flex-wrap justify-center gap-2 w-full md:w-auto">
+                            <button onclick="setCategory('all')" id="btn-all" class="cat-btn active-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-amber-400 text-slate-950">
+                                All Stock
+                            </button>
+                            <button onclick="setCategory('inverter')" id="btn-inverter" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-950 text-slate-300 hover:text-white border border-slate-800">
+                                <i class="fa-solid fa-bolt mr-1 text-amber-400"></i> Inverters
+                            </button>
+                            <button onclick="setCategory('battery')" id="btn-battery" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-950 text-slate-300 hover:text-white border border-slate-800">
+                                <i class="fa-solid fa-battery-full mr-1 text-emerald-400"></i> Lithium Batteries
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Cards Grid -->
+                <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dynamic Product Cards Injected Here -->
+                </div>
+
+                <div id="no-results" class="hidden text-center py-12 text-slate-400">
+                    <i class="fa-solid fa-box-open text-4xl mb-3 text-slate-600"></i>
+                    <p class="text-sm font-semibold">No matching Knox models found in current stock.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features / Why Knox Section -->
+        <section id="features" class="py-20 bg-slate-900/60 border-y border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-amber-400 mb-2">Why Choose Knox</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">Next Generation Solar Power Solutions</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl mb-6">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Dual MPPT Efficiency</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Knox Krypton and Xenon series offer maximum power point tracking to extract peak energy even during cloudy weather.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl mb-6">
+                            <i class="fa-solid fa-battery-charging"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Smart LiFePO4 BMS Sync</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Seamless communication between Knox Inverters and Knox Lithium Batteries via CAN/RS485 protocol for extended battery life.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl mb-6">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Mobile App Wi-Fi Monitoring</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Monitor generation, grid feed, and battery backup status anytime directly from your phone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Order Section -->
+        <section id="contact" class="py-20 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-gradient-to-r from-slate-900 via-brand-navy to-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-2xl">
+                    
+                    <!-- Contact Information -->
+                    <div class="lg:col-span-6 space-y-8">
+                        <div>
+                            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Get In Touch</span>
+                            <h2 class="text-3xl sm:text-4xl font-black text-white mt-1">Wanhar Solar Energy</h2>
+                            <p class="text-slate-300 text-sm mt-3">
+                                Connect directly with Muhammad Hamza for Knox Solar inverter availability, wholesale pricing, or system design consultation.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-11 h-11 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase">Authorized Representative</div>
+                                    <div class="text-base font-bold text-white">Muhammad Hamza</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-11 h-11 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400 text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase">Phone & WhatsApp</div>
+                                    <div class="text-sm font-bold text-white mt-1">
+                                        <a href="tel:03397078611" class="hover:text-amber-400">0339-7078611</a> &nbsp;|&nbsp; 
+                                        <a href="tel:03125794230" class="hover:text-amber-400">0312-5794230</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-11 h-11 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase">Official Email</div>
+                                    <div class="text-sm font-bold text-white mt-1">
+                                        <a href="mailto:wanharsolarenergy@gmail.com" class="hover:text-amber-400">wanharsolarenergy@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-11 h-11 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase">Distribution Outlet Address</div>
+                                    <div class="text-xs font-semibold text-slate-300 mt-1 leading-relaxed">
+                                        Attock Petrol Pump (Wanhar Petroleum), Miani Adda, Wanhar Valley, Buchal Kalan, Kallar Kahar, Chakwal.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instant WhatsApp Order Form -->
+                    <div class="lg:col-span-6 bg-slate-950/90 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-white mb-1">Quick WhatsApp Inquiry</h3>
+                        <p class="text-xs text-slate-400 mb-6">Send an instant pre-filled order or price request to our team.</p>
+
+                        <form class="space-y-4">
+                            <div>
+    <!-- Reusable Hidden SVG Definition for Wanhar Logo -->
+    <svg class="hidden">
+        <g id="officialWanharLogo">
+            <defs>
+                <linearGradient id="panelGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2563eb"/>
+                    <stop offset="50%" stop-color="#1d4ed8"/>
+                    <stop offset="100%" stop-color="#0f172a"/>
+                </linearGradient>
+                <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffe066"/>
+                    <stop offset="40%" stop-color="#f59e0b"/>
+                    <stop offset="100%" stop-color="#b45309"/>
+                </linearGradient>
+            </defs>
+            <!-- Blue Solar Wing -->
+            <g transform="translate(10,0)">
+                <path d="M 30,55 L 75,25 L 115,25 L 70,55 Z" fill="url(#panelGrad2)" stroke="#60a5fa" stroke-width="1.5"/>
+                <path d="M 73,55 L 118,25 L 155,25 L 110,55 Z" fill="url(#panelGrad2)" stroke="#60a5fa" stroke-width="1.5"/>
+                <path d="M 113,55 L 158,25 L 185,25 L 140,55 Z" fill="url(#panelGrad2)" stroke="#60a5fa" stroke-width="1.5"/>
+                <path d="M 20,82 L 65,58 L 105,58 L 60,82 Z" fill="url(#panelGrad2)" stroke="#60a5fa" stroke-width="1.5"/>
+                <path d="M 63,82 L 108,58 L 145,58 L 100,82 Z" fill="url(#panelGrad2)" stroke="#60a5fa" stroke-width="1.5"/>
+                <path d="M 103,82 L 148,58 L 175,58 L 130,82 Z" fill="url(#panelGrad2)" stroke="#60a5fa" stroke-width="1.5"/>
+            </g>
+            <!-- Golden WSE Bird Emblem -->
+            <path d="M 115,85 L 140,32 C 145,25 155,25 160,35 L 178,75 L 195,35 C 200,25 210,25 215,32 L 235,70 C 240,50 255,30 280,18 C 260,32 250,50 245,72 C 240,92 225,100 205,92 C 188,85 180,60 175,52 L 160,85 Z" fill="url(#goldGrad2)"/>
+            <path d="M 220,52 C 235,32 255,15 285,10 C 265,22 250,38 245,58 C 265,42 285,32 300,28 C 280,48 262,68 248,88 C 238,102 220,102 205,92 Z" fill="url(#goldGrad2)"/>
+            <!-- Glowing Sun -->
+            <circle cx="160" cy="22" r="7" fill="#ffffff"/>
+            <polygon points="160,2 163,18 178,22 163,26 160,42 157,26 142,22 157,18" fill="#fbbf24"/>
+            <!-- White Text -->
+            <text x="210" y="125" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="3">WANHAR</text>
+            <text x="210" y="148" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#f8fafc" letter-spacing="6">SOLAR ENERGY</text>
+        </g>
+    </svg>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-10 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <!-- Footer Logo -->
+            <div class="w-64 mx-auto">
+                <svg viewBox="0 0 420 155" class="w-full h-auto">
+                    <use href="#officialWanharLogo"/>
+                </svg>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-slate-400">
+                <span class="font-bold text-slate-200">WANHAR SOLAR ENERGY</span>
+                <span>•</span>
+                <span class="text-amber-400 font-semibold">Authorized Knox Distributor</span>
+            </div>
+            <p>© <span id="year"></span> Wanhar Solar Energy. All rights reserved. Representative: Muhammad Hamza.</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Inventory Data Script -->
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // Knox Inventory Stock Array with Specially Rendered SVG Product Images
+        const inventory = [
+            {
+                id: 1,
+                type: 'inverter',
+                name: 'Knox Krypton 6kW Hybrid Inverter',
+                category: 'Hybrid Solar Inverter',
+                power: '6.0 kW',
+                specs: ['Dual MPPT Trackers', 'Net-Metering Standard Compliant', 'Pure Sine Wave Output', 'Works With & Without Battery'],
+                badge: 'Best Seller',
+                imgType: 'krypton-6kw'
+            },
+            {
+                id: 2,
+                type: 'inverter',
+                name: 'Knox Xenon 10kW On-Grid/Hybrid Inverter',
+                category: 'Heavy-Duty Hybrid Inverter',
+                power: '10.0 kW',
+                specs: ['IP65 Weatherproof Enclosure', 'Three Phase Supported', 'Color Touchscreen Display', 'Parallel Stacking Capability'],
+                badge: 'High Power',
+                imgType: 'xenon-10kw'
+            },
+            {
+                id: 3,
+                type: 'inverter',
+                name: 'Knox Krypton 3.6kW Hybrid Inverter',
+                category: 'Compact Hybrid Inverter',
+                power: '3.6 kW',
+                specs: ['Ideal for Residential Loads', 'High PV Efficiency', 'Built-in Wi-Fi Dongle', 'Fast Transfer Time'],
+                badge: 'Popular',
+                imgType: 'krypton-3kw'
+            },
+            {
+                id: 4,
+                type: 'inverter',
+                name: 'Knox Argon 8kW Hybrid Inverter',
+                category: 'Commercial Hybrid Inverter',
+                power: '8.0 kW',
+                specs: ['Heavy Inductive Load Start', 'BMS Auto-Sync Protocol', 'Smart Grid Off-Peak Charging', 'Overload Protection'],
+                badge: 'Official Stock',
+                imgType: 'argon-8kw'
+            },
+            {
+                id: 5,
+                type: 'battery',
+                name: 'Knox Wall-Mount LiFePO4 Battery (51.2V 100Ah)',
+                category: 'Lithium Energy Storage',
+                power: '5.12 kWh Storage',
+                specs: ['6000+ Cycle Life', 'Integrated Smart BMS Protection', 'Wall-Mounted Space Saver', 'Zero Maintenance'],
+                badge: '10+ Yrs Life',
+                imgType: 'battery-100ah'
+            },
+            {
+                id: 6,
+                type: 'battery',
+                name: 'Knox Rack-Mount LiFePO4 Battery (51.2V 200Ah)',
+                category: 'Lithium Energy Storage',
+                power: '10.24 kWh Storage',
+                specs: ['High Discharge Rate', 'Server Rack Modular Format', 'LCD Voltage Status Display', 'Supports Parallel Expansion'],
+                badge: 'Max Storage',
+                imgType: 'battery-200ah'
+            }
+        ];
+
+        let currentCategory = 'all';
+
+        // Custom Inline SVG Visual Product Renderers for Knox Inverters and Lithium Batteries
+        function generateKnoxProductSVG(imgType) {
+            if (imgType.includes('battery')) {
+                const is200 = imgType.includes('200ah');
+                return `
+                <svg viewBox="0 0 300 220" class="w-full h-44 object-contain mx-auto">
+                    <!-- Background Glow -->
+                    <rect width="300" height="220" rx="16" fill="#091424"/>
+                    <!-- Battery Main Body -->
+                    <rect x="40" y="30" width="220" height="160" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+                    <!-- Metallic Front Plate -->
+                    <rect x="50" y="40" width="200" height="140" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+                    <!-- Knox Brand Logo Header -->
+                    <rect x="60" y="50" width="180" height="25" rx="4" fill="#020617"/>
+                    <text x="70" y="67" font-family="sans-serif" font-weight="900" font-size="14" fill="#10b981">KNOX</text>
+                    <text x="120" y="67" font-family="sans-serif" font-weight="700" font-size="10" fill="#94a3b8">LITHIUM LiFePO4</text>
+                    
+                    <!-- LCD Screen -->
+                    <rect x="60" y="85" width="80" height="40" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+                    <text x="70" y="102" font-family="sans-serif" font-weight="bold" font-size="11" fill="#34d399">51.2V</text>
+                    <text x="70" y="117" font-family="sans-serif" font-size="9" fill="#a7f3d0">${is200 ? '200Ah / 10.2kWh' : '100Ah / 5.12kWh'}</text>
+                    
+                    <!-- Terminals and BMS Switch -->
+                    <circle cx="170" cy="100" r="8" fill="#ef4444"/>
+                    <circle cx="170" cy="100" r="4" fill="#7f1d1d"/>
+                    <circle cx="200" cy="100" r="8" fill="#3b82f6"/>
+                    <circle cx="200" cy="100" r="4" fill="#1e3a8a"/>
+
+                    <!-- Handles -->
+                    <rect x="230" y="90" width="10" height="40" rx="2" fill="#475569"/>
+
+                    <!-- Indicator LEDs -->
+                    <circle cx="65" cy="145" r="3" fill="#10b981"/>
+                    <circle cx="75" cy="145" r="3" fill="#10b981"/>
+                    <circle cx="85" cy="145" r="3" fill="#10b981"/>
+                    <text x="100" y="148" font-family="sans-serif" font-size="8" fill="#64748b">BMS RUN OK</text>
+                </svg>`;
+            } else {
+                // Inverter SVG Generator
+                const isXenon = imgType.includes('xenon');
+                const isArgon = imgType.includes('argon');
+                const headerColor = isXenon ? '#f59e0b' : (isArgon ? '#38bdf8' : '#fbbf24');
+                const pwrText = imgType.includes('10kw') ? '10.0 kW' : (imgType.includes('8kw') ? '8.0 kW' : (imgType.includes('6kw') ? '6.0 kW' : '3.6 kW'));
+
+                return `
+                <svg viewBox="0 0 300 220" class="w-full h-44 object-contain mx-auto">
+                    <rect width="300" height="220" rx="16" fill="#091424"/>
+                    <!-- Inverter Chassis -->
+                    <rect x="70" y="20" width="160" height="180" rx="16" fill="#0f172a" stroke="${headerColor}" stroke-width="2"/>
+                    
+                    <!-- Display Panel -->
+                    <rect x="85" y="35" width="130" height="75" rx="10" fill="#020617" stroke="#1e293b"/>
+                    
+                    <!-- Knox Brand Banner -->
+                    <text x="95" y="55" font-family="sans-serif" font-weight="900" font-size="15" fill="${headerColor}">KNOX</text>
+                    <text x="145" y="55" font-family="sans-serif" font-weight="700" font-size="9" fill="#94a3b8">${isXenon ? 'XENON' : (isArgon ? 'ARGON' : 'KRYPTON')}</text>
+                    
+                    <!-- Circular Gauge Display -->
+                    <circle cx="150" cy="82" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+                    <circle cx="150" cy="82" r="18" fill="none" stroke="${headerColor}" stroke-width="4" stroke-dasharray="80 30"/>
+                    <text x="150" y="85" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="8" fill="#ffffff">${pwrText}</text>
+
+                    <!-- Status Indicator Ring -->
+                    <circle cx="95" cy="130" r="4" fill="#10b981"/>
+                    <circle cx="110" cy="130" r="4" fill="#f59e0b"/>
+                    <circle cx="125" cy="130" r="4" fill="#3b82f6"/>
+
+                    <!-- Bottom Connectors & Heat Sink Ventilation Lines -->
+                    <line x1="85" y1="160" x2="215" y2="160" stroke="#334155" stroke-width="1.5"/>
+                    <line x1="85" y1="168" x2="215" y2="168" stroke="#334155" stroke-width="1.5"/>
+                    <line x1="85" y1="176" x2="215" y2="176" stroke="#334155" stroke-width="1.5"/>
+
+                    <rect x="95" y="185" width="20" height="10" rx="2" fill="#334155"/>
+                    <rect x="125" y="185" width="20" height="10" rx="2" fill="#334155"/>
+                    <rect x="155" y="185" width="20" height="10" rx="2" fill="#334155"/>
+                    <rect x="185" y="185" width="20" height="10" rx="2" fill="#334155"/>
+                </svg>`;
+            }
+        }
+
+        // Render Inventory Grid
+        function renderProducts(items) {
+            const grid = document.getElementById('product-grid');
+            const noResults = document.getElementById('no-results');
+            grid.innerHTML = '';
+
+            if (items.length === 0) {
+                noResults.classList.remove('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+            }
+
+            items.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'bg-brand-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl group';
+
+                let specsHtml = product.specs.map(s => `
+                    <li class="flex items-center text-xs text-slate-300">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mr-2 text-[10px]"></i> ${s}
+                    </li>
+                `).join('');
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Badge & Category Header -->
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[10px] uppercase font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900 text-amber-400 border border-amber-500/30">
+                                ${product.badge}
+                            </span>
+                            <span class="text-xs font-bold text-slate-400">${product.power}</span>
+                        </div>
+
+                        <!-- Product Image Visual -->
+                        <div class="my-2 rounded-xl overflow-hidden bg-slate-950 p-2 border border-slate-800">
+                            <div class="img-zoom">
+                                ${generateKnoxProductSVG(product.imgType)}
+                            </div>
+                        </div>
+
+                        <!-- Product Title -->
+                        <h3 class="text-base font-bold text-white mt-3 group-hover:text-amber-400 transition-colors">${product.name}</h3>
+                        <p class="text-[11px] text-slate-400 mb-3">${product.category}</p>
+
+                        <!-- Specifications List -->
+                        <ul class="space-y-1.5 mb-5 border-t border-slate-800/80 pt-3">
+                            ${specsHtml}
+                        </ul>
+                    </div>
+
+                    <!-- Bottom Action Bar -->
+                    <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">
+                        <span class="text-[11px] font-semibold text-emerald-400"><i class="fa-solid fa-shield-halved mr-1"></i> Factory Warranty</span>
+                        <button onclick="openModal(${product.id})" class="px-4 py-2 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-bold text-xs rounded-xl transition-all shadow-md">
+                            Check Price
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Category Filter Tabs
+        function setCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-amber-400', 'text-slate-950');
+                btn.classList.add('bg-slate-950', 'text-slate-300');
+            });
+
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-amber-400', 'text-slate-950');
+                activeBtn.classList.remove('bg-slate-950', 'text-slate-300');
+            }
+
+            filterAndSearch();
+        }
+
+        // Search & Filter combined
+        function filterAndSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            const filtered = inventory.filter(item => {
+                const matchCategory = currentCategory === 'all' || item.type === currentCategory;
+                const matchQuery = item.name.toLowerCase().includes(query) || 
+                                   item.category.toLowerCase().includes(query) ||
+                                   item.power.toLowerCase().includes(query);
+                return matchCategory && matchQuery;
+            });
+
+            renderProducts(filtered);
+        }
+
+        // Modal Box Functionality
+        function openModal(id) {
+            const product = inventory.find(p => p.id === id);
+            if (!product) return;
+
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="space-y-4">
+                    <div class="text-center">
+                        ${generateKnoxProductSVG(product.imgType)}
+                        <span class="inline-block mt-2 text-[10px] uppercase font-bold text-amber-400 tracking-wider">${product.category}</span>
+                        <h3 class="text-lg font-bold text-white">${product.name}</h3>
+                    </div>
+
+                    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs text-slate-300 space-y-1">
+                        <div class="font-bold text-white mb-1">Key Specs & Features:</div>
+                        ${product.specs.map(s => `<div>• ${s}</div>`).join('')}
+                    </div>
+
+                    <a href="https://wa.me/923397078611?text=${encodeURIComponent(`Hello Muhammad Hamza, I am interested in ordering/inquiring price for Knox model: ${product.name}`)}" 
+                       target="_blank"
+                       class="w-full py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs rounded-xl flex items-center justify-center space-x-2 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Inquire Price on WhatsApp</span>
+                    </a>
+                </div>
+            `;
+
+            document.getElementById('productModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('productModal').classList.add('hidden');
+        }
+
+        // WhatsApp Direct Inquiry Form
+        function sendWhatsAppInquiry() {
+            const name = document.getElementById('custName').value || 'Customer';
+            const city = document.getElementById('custCity').value || 'Not specified';
+            const product = document.getElementById('custProduct').value;
+            const message = document.getElementById('custMsg').value || 'No extra message';
+
+            const text = `*WANHAR SOLAR ENERGY WEBSITE INQUIRY*%0A%0A` +
+                         `*Customer Name:* ${encodeURIComponent(name)}%0A` +
+                         `*Location:* ${encodeURIComponent(city)}%0A` +
+                         `*Product Selected:* ${encodeURIComponent(product)}%0A` +
+                         `*Notes:* ${encodeURIComponent(message)}`;
+
+            window.open(`https://wa.me/923397078611?text=${text}`, '_blank');
+        }
+
+        // Initial Load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts(inventory);
+        });
+    </script>
+</body>
+</html>
+```
